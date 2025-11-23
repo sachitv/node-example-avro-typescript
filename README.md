@@ -1,10 +1,10 @@
 # Node Avro TypeScript Example
 
-This project demonstrates how to use the `@sachitv/avro-typescript` library with Node.js 22 in both a Node runtime and a browser bundle.
+This project demonstrates how to use the `@sachitv/avro-typescript` library with Node.js 25 in both a Node runtime and a browser bundle.
 
 ## Prerequisites
 
-- Use Node.js 22 (`nvm use` will read `.nvmrc`).
+- Use Node.js 25 (`nvm use` will read `.nvmrc`).
 - Install dependencies with:
 
 ```bash
