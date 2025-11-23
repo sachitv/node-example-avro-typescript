@@ -1,0 +1,29 @@
+{
+  "name": "node-example-avro-typescript",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build:browser": "esbuild ./src/browser.ts --bundle --sourcemap --outdir=./dist --format=esm --platform=browser --target=es2022",
+    "serve": "NODE_NO_WARNINGS=1 node --import ./ts-register.mjs src/server.ts",
+    "start": "npm run build:browser && npm run serve",
+    "test:node": "NODE_NO_WARNINGS=1 node --import ./ts-register.mjs src/index.ts",
+    "test:e2e": "npm run build:browser && playwright test",
+    "check": "biome check .",
+    "format": "biome format . --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.7.9",
+    "esbuild": "^0.24.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@sachitv/avro-typescript": "npm:@jsr/sachitv__avro-typescript@^0.3.1"
+  }
+}
