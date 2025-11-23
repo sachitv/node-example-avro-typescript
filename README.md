@@ -1,5 +1,7 @@
 # Node Avro TypeScript Example
 
+[![CI](https://github.com/sachitv/node-example-avro-typescript/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/sachitv/node-example-avro-typescript/actions/workflows/ci.yml)
+
 This project demonstrates how to use the `@sachitv/avro-typescript` library with Node.js 25 in both a Node runtime and a browser bundle.
 
 ## Prerequisites
